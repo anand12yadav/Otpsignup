@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login">
+
+    <EditText
+        android:id="@+id/countryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="91"
+        />
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_toRightOf="@id/countryCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/generateOtp"
+        android:layout_below="@id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Otp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/loginprogress_bar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/phoneNumber"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="14dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
